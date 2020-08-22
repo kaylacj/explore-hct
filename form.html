@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  href="main.css" rel="stylesheet">
+<title>Explore HCT - Contact Us</title>
+</head>
+<body> 
+
+<!--Nav Bar-->
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" style="float:left">Explore HCT</a>
+  <a href="pharmtech.html">Pharmacy Technician</a>
+  <a href="cprfirstaide.html">CPR/First Aide</a>
+  <a href="nurseaide.html">Nurse Aide</a>
+  <a href="medaide.html">Medication Administration Aide</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!--Page Content-->
+
+<div class="w3-content" style="max-width:2000px">
+
+<div class="w3-container w3-padding-32" id="form">
+  <h3 class="w3-border-bottom w3-border-black w3-padding-16 w3-center">Contact Us</h3>
+  <p>Request sign up and additional course information.</p>
+  <form action="/action_page.php" target="_blank">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+    <select class="w3-select w3-border" name="course">
+      <option value="" disabled selected>Choose Course</option>
+      <option value="1">Pharmacy Technician</option>
+      <option value="2">CPR/First Aide</option>
+      <option value="3">Nurse Aide</option>
+      <option value="3">Medication Administration Aide</option>
+    </select>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Questions and Comments" required name="Comment">
+    <a href="#submit" class="button w3-section">Submit</a>
+  </form>
+</div>
+
+
+<!--Footer-->
+
+<footer class="w3-center w3-white w3-padding-32">
+  <h5>Copyright 2020 Explore HCT</h5>
+</footer>
+
+<!--Javascript-->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+</div>  
+
+</body>
+</html>
